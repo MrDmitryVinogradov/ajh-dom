@@ -1,7 +1,6 @@
 // TODO: write code here
-console.log('app worked');
 const field = document.querySelector('.field');
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 16; i += 1) {
   const block = document.createElement('div');
   block.id = i;
   block.classList.add('block');
@@ -21,8 +20,7 @@ function activateBlock() {
   const index = Math.floor(Math.random() * 15);
   if (prevIndex !== index) {
     blocks[index].classList.add('activeBlock');
-  }
-  else {
+  } else {
     blocks[0].classList.add('activeBlock');
   }
 }
