@@ -8,15 +8,24 @@ for (let i = 0; i < 16; i++) {
   field.appendChild(block);
 }
 const blocks = Array.from(document.querySelectorAll('.block'));
-console.log(blocks);
+
+//  Randomizer
 function activateBlock() {
+  let prevIndex = 0;
   blocks.forEach((element) => {
     if (element.classList.contains('activeBlock')) {
       element.classList.remove('activeBlock');
+      prevIndex = element.index;
     }
   });
   const index = Math.floor(Math.random() * 15);
-  blocks[index].classList.add('activeBlock');
+  if (prevIndex !== index) {
+    blocks[index].classList.add('activeBlock');
+  }
+  else {
+    blocks[0].classList.add('activeBlock');
+  }
 }
 
+//  Interval of randomizer
 setInterval(activateBlock, 1000);
