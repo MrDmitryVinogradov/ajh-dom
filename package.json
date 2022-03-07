@@ -17,7 +17,11 @@
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
-  "author": "coursar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDmitryVinogradov/ahj-dom.git"
+  },
+  "author": "MrDmitryVinogradov",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
