@@ -6,7 +6,7 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: 'https://mrdmitryvinogradov.github.io/ajh-dom/',
   },
   module: {
     rules: [
