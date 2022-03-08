@@ -1,0 +1,26 @@
+body {
+    color: #999;
+}
+.field {
+    
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    box-sizing: border-box;
+}
+.block {
+    width: 90px;
+    height: 90px;
+    box-sizing: border-box;
+    background-color: rgb(1, 100, 1);
+    margin-top: 10px;
+}
+
+.activeBlock {
+    background-image: url('https://github.com/netology-code/ahj-homeworks/blob/simplification/dom/pic/goblin.png?raw=true');
+    background-position: center;
+    background-size: contain;
+}
+
